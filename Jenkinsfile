@@ -4,8 +4,8 @@ pipeline {
         stage('Stage 1') {
             steps {
                 echo 'Hello world!' 
-                //env.Trying = Trying                
-                echo '${Trying}'
+                Trying = params.get(Trying)
+                echo '${params.Trying}'
             }
         }
     }
