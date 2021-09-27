@@ -2,9 +2,11 @@ pipeline {
     agent any 
     stages {
         stage('Stage 1'){
+            steps{
             sh"""
             echo"${Trying}"
             """
+            }
         }
         stage('Stage 2') {
             steps {
