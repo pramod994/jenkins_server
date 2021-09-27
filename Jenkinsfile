@@ -4,7 +4,7 @@ pipeline {
         stage('Echo File'){
             steps{
             sh"""
-            echo"${Trying}"
+            echo "${Trying}"
             """
             }
         }
@@ -12,11 +12,11 @@ pipeline {
             steps {
                 sh """
                 if [${Trying}=='Test'] then
-                    echo "this is Test"
+                echo "this is Test"
                 elif[${Trying}=='Test1'] then
-                    echo "this is Test1"
+                echo "this is Test1"
                 elif[${Trying}=='Test2'] then
-                    echo "this is Test2"
+                echo "this is Test2"
                 if
                 """
             }
