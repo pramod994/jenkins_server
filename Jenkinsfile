@@ -19,7 +19,7 @@ pipeline {
                 echo "this is Test2"
                 else
                 echo "no conditions"
-                if
+                fi
                 """
             }
         }
