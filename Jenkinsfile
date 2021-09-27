@@ -11,9 +11,6 @@ pipeline {
                 
                 elif[${Trying}=='Test2'] then
                     echo "this is Test2"
-
-                else
-                    echo "no test"
                 if
                 """
             }
