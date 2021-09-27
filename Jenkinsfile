@@ -4,14 +4,15 @@ pipeline {
         stage('Stage 1') {
             steps {
                 sh """
-                if [${Trying}=='Test']
-                then 
+                if [${Trying}=='Test'] then
+                 
                 echo "this is Test"
-                elif[${Trying}=='Test1']
-                then
+                elif[${Trying}=='Test1'] then
+                
                 echo "this is Test1"
-                elif[${Trying}=='Test2']
+                elif[${Trying}=='Test2'] then
                 echo "this is Test2"
+                
                 else
                 echo "no test"
                 if
