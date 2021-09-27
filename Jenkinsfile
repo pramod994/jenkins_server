@@ -1,14 +1,14 @@
 pipeline {
     agent any 
     stages {
-        stage('Stage 1'){
+        stage('Echo File'){
             steps{
             sh"""
             echo"${Trying}"
             """
             }
         }
-        stage('Stage 2') {
+        stage('Test_condition') {
             steps {
                 sh """
                 if [${Trying}=='Test'] then
