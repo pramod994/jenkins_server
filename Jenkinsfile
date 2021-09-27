@@ -4,7 +4,7 @@ pipeline {
         stage('Echo File'){
             steps{
             sh"""
-            echo"${Trying}"
+            echo "${Trying}"
             """
             }
         }
