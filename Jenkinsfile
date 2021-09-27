@@ -6,7 +6,7 @@ pipeline {
             steps {
                 sh """
                 echo ${Trying}
-                if [${Trying}=="Test"] then
+                if [${Trying}=="Test"]; then
                 echo "this is Test"
                 elif[${Trying}=="Test1"]; then
                 echo "this is Test1"
